@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+<link rel="icon" href="images\city/6.jpeg">
+<link rel="apple-touch-icon" href="images\city/6.jpeg">
+<link rel="apple-touch-startup-image" href="images/ll.gif">
+<title>BECOMING CYBORG EP</title>
+
+<body>
+	<div id="gestureZone">
+
+		<!-- SIDE A // SIDE B NAVIGATION -->
+		<div id="myNavBtns">
+			<button onclick="frontTime()" id="myFrontBtn">SIDE A</button>
+			<button onclick="backTime()" id="myBackBtn">SIDE B</button>
+			<button onclick="pReelTime()" id="myPReelBtn" style="display: none">Gallery</button>
+		</div>
+
+		<!-- 9:16 Music Player -->
+		<span id="dots"></span>
+		<span id="myMusic1" style="position:fixed;transition: top .3s">
+			<div id="myNav2Btns">
+				<button onclick="lyricTime()" id="myLyricBtn">▲Lyrics</button>
+			</div>
+			<div class="container" id="stuff">
+				<div class="closebtn" onclick="closeMusic()">
+					<img width="40px" style="padding: 8px;" src="images/back.png">
+				</div>
+				<div class="bg1">
+					<div class="titre" style="position: absolute; top: 0vh; text-align: center;">
+						<h3 id="songTitle" style="text-align: center; margin-top: 8px;"></h3>
+					</div>
+				</div>
+			</div>
+		</span>
+
+		<!-- music player -->
+		<div class="container">
+			<span id="stuff">
+				<center>
+					<div class="lecteur" id="wow">
+						<audio controls id='myAudio' style="display: none;">
+							<source src="" type="audio/mp3" />
+						</audio>
+					</div>
+				</center>
+			</span>
+		</div>
+
+		<!-- SIDE A // front page -->
+		<span id="dots"></span>
+		<span id="moreFront">
+			<div class="music-player" id='oop'>
+				<div id='tap' style="position: absolute; top: 70vh; color: white; font-size: 10vw; text-shadow: grey 0 0 5vw;">BECOMING CYBORG</div>
+				<div class="bg">
+				</div>
+
+			</div>
+			<div class="titre">
+				<h3>Pink Phantom</h3>
+				<h1>BECOMING CYBORG</h1>
+			</div>
+
+			<br>
+			<br>
+			<div class="titre">
+				<h3 style="padding-left: 1vw;margin-top: -0vh;text-align: left; text-shadow: 0vw 0vw .5vw #080808	; line-height: 10vw; font-size: 5vw; background: #080808	;">
+					<div class="arrow" onclick="trackListTime()" id="myTrackListBtn">
+						<span id="dots"></span>
+						<span id="moreTrackListing">
+							view tracks ▲
+						</span>
+						<span id="dots"></span>
+						<span id="lessTrackListing">
+							view tracks ▼ <br>
+						</span>
+					</div>
+
+					<!-- list of songs -->
+					<span id="dots"></span>
+					<span id="less1TrackListing">
+						<div id="imageGallery">
+							<figure>
+								<img loading=lazy src="images/circ.gif" onclick="itimeStamp0()">
+								<figcaption>
+									SURVIVE
+								</figcaption>
+							</figure>
+							<figure>
+								<img loading=lazy src="images/5.jpg" onclick="itimeStamp1()">
+								<figcaption>
+									BLUE SCREEN // MAGENTA GLITCH
+								</figcaption>
+							</figure>
+						</div>
+						<br>
+						<div id="imageGallery">
+							<figure>
+								<img loading=lazy src="images/6.jpg" onclick="itimeStamp2()">
+								<figcaption>
+									THE ART GALLERY
+								</figcaption>
+							</figure>
+							<figure>
+								<img loading=lazy src="images/city/6.gif" onclick="itimeStamp3()">
+								<figcaption>
+									TRAP CONTROL
+								</figcaption>
+							</figure>
+						</div>
+						<br>
+						<div id="imageGallery">
+							<figure>
+								<img loading=lazy src="images/city/12.gif" onclick="itimeStamp4()">
+								<figcaption>
+									BECOMING CYBORG
+								</figcaption>
+							</figure>
+						</div>
+						<br>
+						<br>
+					</span>
+				</h3>
+				<br>
+				<br>
+				<br>
+
+				<!-- discography section -->
+				<div class="disco" style="padding-left: 1vw;">
+					more by pink phantom
+				</div>
+				<div id="main">
+					<p>
+						<a href="overMyDeadBody.html">
+							<img loading=lazy src="images\albumart\OMDB.png">
+						</a>
+						<i>OVER MY DEAD BODY</i><br>
+					</p>
+					<p>
+						<a href="feed_me.html">
+							<img loading=lazy src="images\albumart\feedme.png">
+						</a>
+						<i>feed_me</i><br>
+					</p>
+					<p>
+						<a href="paralyzed.html">
+							<img loading=lazy src="images\paralyzed.png">
+						</a>
+						<i>Paralyzed</i><br>
+					</p>
+					<p>
+						<img loading=lazy src="images\maybs.jpg">
+						<i>WHAT IS...?</i><br>
+					</p>
+					<p>
+						<img loading=lazy src="images\tgc.jpg">
+						<i>GASLIGHT CORP.</i><br>
+					</p>
+					<p>
+						<img loading=lazy src="images\theclub.jpg">
+						<i>The Club</i><br>
+					</p>
+					<p>
+						<img loading=lazy src="images\thecity.jpg">
+						<i>The City</i><br>
+					</p>
+					<p>
+						<img loading=lazy src="images\invisiblehand.jpg">
+						<i>The Invisible Hand</i><br>
+					</p>
+				</div>
+				<br>
+				<br>
+				<br>
+			</div>
+		</span>
+
+		<!-- optional photo gallery -->
+		<span id="dots"></span>
+		<span id="morePReel">
+		</span>
+
+		<!-- SIDE B // back page-->
+		<span id="dots"></span>
+		<span id="moreBack">
+			<div class="titre">
+				<div id="myNav1Btns" style="color: white;">
+					<button onclick="lyricTime()" id="myLyricBtn">▲lyrics</button>
+				</div>
+				<div style="padding-top: 20vh;color: white; margin-top: 0vh; padding-left: 5%; font-size: 17px; font-weight: 500;font-size: 7vw;">
+					The American Dream
+				</div>
+				<div style="font-size: 5vw; color: gray;padding-left: 5%;">
+					by Pink Phantom</div>
+				<div style="padding-bottom: 15vh;padding-left: 5%;margin-top: 0vh;font-size: 4vw; color: gray;"> released April 20th, 2018</div>
+			</div>
+			<div style="margin: 0vw; background: black;">
+				<center>
+					<img loading=lazy src="images/americandream.jpg" width="100%" style="padding: 0vw;" alt="">
+				</center>
+			</div>
+			<div style="padding-top: 10vh; padding-bottom: 10vh; font-size: 5vw; color: white; background: black;
+								text-align: right; padding-right: 5vw;">
+				What is The American Dream?<br><br> What is reality?<br><br> Why does it matter?<br><br></div>
+			<div style="padding: 5vw; font-size: 8vw; color: white;background: black;text-align: left;">
+				<div style="font-size: 8vw;">
+					Part I: Waking
+				</div>
+				<img loading=lazy src="images/city/a.jpg" width="100%" style="padding: 0vw;" alt="" onclick="timeStamp1()">
+				<div style="font-size: 5vw;" onclick="timeStamp1()">
+					<b><u>[0:00] Dreams</u></b>
+				</div>
+			</div>
+			<div class="bodyBoi">
+				THE MATRIX describes a world in which reality is <i>constructed</i> as opposed to existing with the status of “given” and furthers a narrative that reality’s existence, itself, is and should be up for debate. Entertaining this idea, we might
+				be able to analogize reality with dreams. One may wake up from a dream, but they would find that they only wake to another dream.<br><br>
+				Destabilizing reality in this way also destabilizes phenomena we believe to be givens of reality, such as time & space. What proof do we have that either of these entities exist, given the fact that they are drenched in paradox. Take Zeno’s
+				paradox. If Zeno’s paradox destabilizes distance, might it also destabilize time, as distance often swoops in to analogize time, since we have no other way of understanding but in terms of space?<br><br>
+				At the collapse of time and space, the dream becomes the ultimate metaphor of reality; such a fitting metaphor it almost crosses the line that defines the dream and reality.<br><br>
+				Therefore, if distance doesn’t exist, moving from one dream to another isn’t even possible. If we cannot move, then waking is impossible.<br><br>
+			</div>
+			<div style="padding: 5vw;font-size: 8vw; color: white;background: black;text-align: left;"><br>
+				<img loading=lazy src="images/newglitch/tenor.gif" width="100%" style="padding: 0vw;" alt="" onclick="timeStamp2()">
+				<div style="font-size: 5vw;" onclick="timeStamp2()">
+					<b><u>[01:39] No Wolves, Just Sheep Grazing on the Fabric We Call Home</u></b><br>
+				</div>
+			</div>
+			<div class="bodyBoi">
+				And what of the self in this paradigm? We say that we experience reality. Is experience reality?<br><br>
+				Well where does the dream come from? If reality comes from the mind, we move from the theory of THE MATRIX to the theory of INCEPTION, where reality is a projection of the consciousness of the dreamer.<br><br>
+				As an aside, do these theories disqualify the existence and experience of others? My personal belief: no, and never. Existing in a society, existing with others means unequivocally granting the full and unconditional validity of experience to
+				everyone. To do otherwise is to guarantee the demise of a healthy society.<br><br>
+				Coming back. Given the fact that all that we experience is filtered and produced from our memories, subconscious, and other psychological phenomena, we might conclude that the world is a mirror. The dream is an infinite reflection.<br><br>
+				<place mirror bridge image from inception>
+			</div>
+			<div style="padding: none; background: black;">
+				<center>
+					<img loading=lazy src="images/unsplashCity.jpg" onclick="timeStamp3()" width="100%" alt="">
+				</center>
+			</div>
+			<div style="padding: 5vw;font-size: 8vw; color: white;background: black;text-align: left;"><br>
+				<div style="font-size: 5vw;" onclick="timeStamp3()">
+					<i><b><u>[06:43] THEATRE OF ANIMALS</u></b></i>
+				</div>
+			</div>
+			<div class="bodyBoi">
+				This is a concept album about the United States after all… But we’ll hold off on that for now.<br><br>
+			</div>
+			<div style="padding: 5vw;font-size: 8vw; color: white;background: black;text-align: left;"><br>
+				<center>
+					<img loading=lazy src="images/sleepFactory.png" onclick="timeStamp3()" width="100%" alt="">
+				</center>
+				<div style="font-size: 5vw;" onclick="timeStamp4()">
+					<b> <i><u>[10:12] The Sleep Factory</u></i></b><br>
+				</div>
+			</div>
+			<div class="bodyBoi">
+				To the question of waking from the dream, we may continue traveling radially across rings of dreams, but you’ll never reach the edge, because moving itself is a fallacy. So, we live in an infinite metadream, one that does not grant real time
+				or real space, or real reality. If distance does not exist, then reality seems to crumble in on itself, only to be reproduced by our minds themselves; as the only correlative is our minds, themselves.<br><br>
+			</div>
+			<div style="padding: 5vw;font-size: 8vw; color: white;background: black;text-align: left;"><br>
+				<div style="font-size: 5vw;">
+					<b>WHY DOES IT MATTER</b>
+				</div>
+			</div>
+			<div class="bodyBoi">
+				Understanding that reality is constructed and not a given begs questions of why, how, and what.. To be infinitely curious is to guarantee one’s own psychological freedom, or does it? In one sense, reality has been created for us - it is a
+				given. The important thing to remember is that reality0 was not created by us - it was a matter of societal, familial, interpersonal creation. To question is to destabilize, and to theorize is to materialize reality.<br><br>
+			</div>
+			<div style="padding: 5vw;font-size: 8vw; color: white;background: black;text-align: left;"><br>
+				<div style="font-size: 8vw;">
+					<b>CHRONOLOGY</b>
+					<center>
+						<img loading=lazy src="images/1012.png" onclick="timeStamp5()" width="100%" alt="">
+					</center>
+				</div>
+			</div>
+			<div class="bodyBoi">
+				<div onclick="timeStamp4()"><u>[10:12]</u></div><br><br>
+				The night was dark and the fog was heavy. Everything we have done has been leading up to this moment. The only beam of light there seemed to be was the neon blue skyscraper towering over us. we knew that, after tonight, there was no going
+				back. I hated it, but if I’m being honest, i thought it was kind of beautiful. I looked at Ryan and we both knew this would be it.<br><br>
+				“Are you ready?,” Ryan said.<br><br>
+				I nodded and we lit the fuse. All I could focus on after that was the chain link fence we were running towards, the dirt kicking up behind us, our bodies beating outside of ourselves. We scale the fence and then there it was. The loudest
+				sound I've ever heard. We hit the ground and as if perfectly orchestrated in concert, in that moment the computer tower exploded with glimmering pieces of servers and concrete, and date. We did it. We had liberated our people. Nothing that
+				could happen after this moment mattered, not even death.<br><br>
+				And then there was blackness.<br><br>
+				<center>
+					<img loading=lazy src="images/funeral.png" onclick="timeStamp6()" width="100%" alt="">
+				</center>
+				<div onclick="timeStamp5()"><u>[12:07]</u></div><br><br>
+				The underground gathered around their fallen friends. The green sodium lamps from above put a darker vampire black hue on the bodies. The world around began to shrink - blackness began to overtake the city. The city fractilized and the
+				funeral room grew smaller and bigger simultaneously.<br><br>
+				<center>
+					<img loading=lazy src="images/funeral1.png" width="100%" alt="">
+				</center>
+				<div onclick="timestamp6()">[13:03]</div><br><br>
+				I awoke to the sound of my alarm. It was quieter than usual. That was, until I saw the time. I was late for work. I rushed out the door and headed to work as fast as I could. As I drove through the city, I started to feel nauseous. I’d never
+				felt like this before.<br><br>
+				I caught myself, “never?” I thought. And then it hit. My breakfast was all over the car. I called in sick and went back home.<br><br>
+				<center>
+					<img loading=lazy src="images/1703.jpeg" width="100%" alt="">
+				</center>
+				[17:03]<br><br>
+				I lay in bed and Everyday feels the same. Nothing is interesting to me anymore. I go to work, come home, watch tv and sleep. I just need sleep. Maybe I’ll just go to sleep.<br><br>
+				I can feel the cold air across my face. I just need to wake up. The ground doesn’t seem so far from me anymore. I just need to wake up. There are sirens in the distance, and it begins to rain. What am I feeling. I’m so lost, but I don’t know
+				if I even feel anything anymore. What is real. Now I can feel the air pushing against my body, I can see the sidewalk coming for me, the people are approaching, and everything is growing larger. Just as I feel the immediacy of blackness,
+				everything bounces away into itself and I feel it all spinning around and behind me. I just need to wake up. I’m nauseous.<br><br>
+				<center>
+					<img loading=lazy src="images/fall1.gif" width="100%" alt="">
+				</center>
+				[18:14]<br><br>
+				just be normal do your part is the calm before the storm<br><br>
+				[20:25]<br><br>
+				Subplot: how to organize a rebellion.<br><br>
+				[28:14]<br><br>
+				Maybe this is when the main character goes out and gives a speech (martyr scene)<br><br>
+				[31:52]<br><br>
+				this when the main character goes out at night and finds the warehouse filled with bodies<br><br>
+				[34:39]<br><br>
+				[40:59]<br><br>
+				Ends with main character falling asleep.<br><br>
+			</div>
+		</span>
+
+		<!-- lyric panel -->
+		<div class="bodyBoi2">
+			<span id="lyricsDots"></span>
+			<span id="moreLyrics">
+				<span id="lyricImage">
+					<div id="myNav3Btns" style="color: white;">
+						<button onclick="openMusic()">▲music</button>
+					</div>
+					<br>
+					<br>
+					<img id="lyricPANEL" loading=lazy style="padding-top: -10vh; padding-bottom: -10vh;" src="" width="100%">
+					<br>
+				</span>
+			</span>
+		</div>
+
+		<!-- <div class="backgroundThingy">
+							<center>
+								<footer style="padding-bottom: 10vh;font-size: 5vw; color: white;">&copy; Copyright 2020 PINK PHANTOM</footer>
+							</center>
+						</div> -->
+		<!-- </div> -->
+	</div>
+</body>
+
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelementplayer.min.css">
+<link rel="stylesheet" href="becoming_cyborg_min.css">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelement-and-player.min.js"></script>
+<script type="text/javascript" src="becoming_cyborg_min.js"> </script>
+
+</html>

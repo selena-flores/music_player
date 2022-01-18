@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+	<link rel="icon" href="images\pinklogo.jpg">
+<title>PINK PHANTOM NEWS</title>
+
+
+<body onload="frontTime();">
+
+	<!-- <h1 style="font-size: 8vw; text-align: center;color: white;">PINK PHANTOM</h1> -->
+	<div id="myNavBtns">
+			<button onclick="frontTime()" id="myFrontBtn">MEDIA</button>
+
+			<button  onclick="lyricTime()" id="myLyricBtn">VLOGS</button>
+
+
+			<button  onclick="backTime()" id="myBackBtn">PRESS</button>
+
+
+			<button  onclick="pReelTime()" style="display:none;"id="myPReelBtn">UPCOMING</button>
+	</div>
+
+	<br>
+	<br>
+
+	  <div id="gestureZone">
+        <div class="container">
+
+						<span id="dots"></span>
+						<span id="moreFront">
+
+<div id="myModal" class="modal">
+<span class="close cursor" onclick="closeModal()">&times;</span>
+<div class="modal-content">
+
+	<div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="images/pinkB.gif" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="images/raa.gif" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="images/pink2.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="images/sam1.jpg" style="width:100%">
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1)">__<br>__<br>__<br>__<br>__<br>__</a>
+	<a class="next" onclick="plusSlides(1)">__<br>__<br>__<br>__<br>__<br>__</a>
+
+	<div class="caption-container">
+		<p id="caption"></p>
+	</div>
+
+
+	<div class="column">
+		<img class="demo cursor" src="images/pinkB.gif" style="width:0%" onclick="currentSlide(1)" alt="this is where i put text">
+	</div>
+	<div class="column">
+		<img class="demo cursor" src="images/raa.gif" style="width:0%" onclick="currentSlide(2)" alt="more text">
+	</div>
+	<div class="column">
+		<img class="demo cursor" src="images/pink2.jpg" style="width:0%" onclick="currentSlide(3)" alt="some more">
+	</div>
+	<div class="column">
+		<img class="demo cursor" src="images/sam1.jpg" style="width:0%" onclick="currentSlide(4)" alt="and more">
+	</div>
+</div>
+</div>
+
+							</div>
+							</span>
+
+									<span id="dots"></span>
+									<span id="moreBack">
+										<br>
+										<br>
+										<div class="gallery" style="border: none; width: 30%; padding-left: 16px;">
+											<a href="https://piolog.com/2020/03/06/sam-flores-music-challenges-media/">
+												<img src="images/piologPic.jpg" alt="Cinque Terre" width="600" height="400">
+											</a>
+											<div class="desc" style="font-size: 4vw;background-color: rgb(10, 10, 10);text-align: left;">
+												PioLog</div>
+											</a>
+										</div>
+									<div class="clearfix" style="padding-bottom: 40vh;"></div>
+
+		</span>
+
+
+			<span id="lyricsDots"></span>
+			<span id="moreLyrics">
+<br>
+<br>
+				<span id="lyricImage">
+
+					<div class="responsive">
+						<div class="gallery" style="border: none;">
+							<a target="_blank" href="ticket link">
+								<img src="images/unsplashCity.jpg" alt="Cinque Terre" width="600" height="400">
+							</a>
+							<div class="desc" style="background-color: rgb(10, 10, 10);text-align: left;">
+								post some vlogs here</div>
+						</div>
+
+					</div>
+
+					<div class="clearfix" style="padding-bottom: 40vh;"></div>
+
+				</span>
+
+			</span>
+
+
+			<span id="dots"></span>
+			<span id="morePReel">
+<br>
+<br>
+
+<div class="responsive">
+	<div class="gallery" style="border: none;">
+		<a target="_blank" href="ticket link">
+			<img src="images/unsplashCity.jpg" alt="Cinque Terre" width="600" height="400">
+		</a>
+		<div class="desc" style="background-color: rgb(10, 10, 10);text-align: left;">
+			this tab is for upcoming stuff</div>
+	</div>
+</div>
+
+<div class="clearfix" style="padding-bottom: 40vh;"></div>
+
+
+							</span>
+
+
+						<div class="backgroundThingy">
+							<center>
+								<footer style="font-size: 5vw; color: white;">&copy; Copyright 2020 PINK PHANTOM</footer>
+							</center>
+
+						</div>
+
+					</div>
+				</div>
+
+				<!-- <center>
+
+				<p>
+				<button class="cybr-btn">
+				Website<span aria-hidden>_</span>
+				<span aria-hidden class="cybr-btn__glitch">Website</span>
+			</a>
+			<span aria-hidden class="cybr-btn__tag">R25</span>
+		</button>
+		<button class="cybr-btn">
+		VSCO<span aria-hidden>_</span>
+		<span aria-hidden class="cybr-btn__glitch">VSCO</span>
+		<span aria-hidden class="cybr-btn__tag">R25</span>
+	</button>
+</p>
+</center> -->
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelementplayer.min.css">
+
+
+
+<style>
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+	padding-left: 0px;
+	padding-right: 0px;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: black;
+  margin: none;
+  padding: 0;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+	display: none;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+	top: 0%;
+  padding: 0;
+  color: transparent;
+  font-weight: 900;
+  font-size: 20vh;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+	display: none;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: left;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+
+
+
+
+
+
+.tix{
+	display: inline-flex;
+	position: absolute;
+	right: 16px;
+	bottom: 16px;
+}
+
+div.gallery {
+  /* border: 1px solid magenta; */
+	box-shadow: 2vw 2vw 1vw black;
+	padding: 8px;
+
+
+}
+
+div.gallery:hover {
+  border: 1px solid white;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+
+}
+
+@font-face {
+  font-family: thisFont;
+  src: url(fonts/modeNine.ttf)
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+	color: white;
+	font-family: thisFont;
+	text-shadow: 0vw 0vw 2vw magenta;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 0px;
+	padding: 16px;
+	width: 30%;
+	text-align: center;
+	display: inline-flex;
+	flex: 1;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+/* @media screen and (max-device-width:480px){body{-webkit-text-size-adjust:none}} */ */
+-webkit-background-size: 2650px 1440px;
+
+
+.photoBoi{
+	max-width: 500px;
+}
+
+.titleBoi{
+	background-color: rgba(0,0,0,.5);
+	color:gray;
+	font-size: 10vw;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	text-align: center;
+}
+
+.titleReal{
+	background-color: rgba(0,0,0);
+	color:gray;
+	font-size: 10vw;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	text-align: center;
+
+}
+
+#myNavBtns{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: inline-flex;
+	z-index: 99;
+	width: 100%;
+	transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+#myNavBtns button {
+	flex: 1;
+	padding: 2vw;
+	text-align: center;
+	background-color: rgb(0,0,0,.7);
+	z-index: 99;
+	color: white;
+	font-family: cyber;
+	font-size: 5vw;
+	border-style: hidden;
+	border-bottom: 3px solid transparent;
+
+}
+
+#myNavBtns button:focus {
+	outline: 0vw solid white;
+	border-bottom: 3px solid magenta;
+	/* background-color: rgba(120,120,120,.5); */
+}
+
+#myNavBtns button:focus {
+	border-bottom: 3px solid magenta;
+  outline: 0vw solid white;
+}
+
+
+.photoReel{
+	background-color: black;
+	color:gray;
+	margin: 0;
+	font-size: 8vw;
+	line-height: 10vw;
+	text-align: center;
+
+}
+
+.bodyBoi{
+	background-color: black;
+	color:white;
+	line-height: 8vw;
+	font-size: 5vw;
+	padding: 5vw;
+	text-align: left;
+}
+
+.bodyBoi2{
+	background-color: black;
+	line-height: 10vw;
+	color:white;
+	font-size: 8vw;
+	padding: 0vw;
+	text-align: left;
+}
+
+
+@font-face {
+  font-family: Cyber;
+  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+  font-display: swap;
+}
+
+
+.glow-on-hoverMAIN {
+    width: 25vw;
+		display: inline-flex;
+		box-sizing: border-box;
+		box-shadow: 1vw 1vw 1vw black;
+    height: 10vw;
+		font-size: 5vw;
+		background-color: rgb(0,0,0,.7);
+		color: white;
+		border: 1vw;
+		text-align: center;
+    cursor: pointer;
+    z-index: 99;
+}
+
+
+.glow-on-hoverMAIN:focus {
+  outline: 0vw solid white;
+	background-color: rgba(120,120,120,.5);
+}
+
+.glow-on-hoverMAIN:active {
+  outline: 0vw solid white;
+}
+
+
+@font-face {
+   font-family: fongBoi;
+   src: url(fonts/hacked.ttf);
+
+}
+
+@font-face {
+   font-family: fontBoi1;
+   src: url(fonts/modeNine.ttf);
+
+}
+
+body {
+		max-width: 700px;
+		margin: auto;
+		padding: none;
+		display: inline;
+		background-color: rgb(10,10,10);
+		overflow-x: hidden;
+		background-size: 100%;
+		background-attachment: fixed;
+		font-family: 'Cyber', sans-serif;
+		/* background-image: linear-gradient("images/americandream.jpg") */ */
+    /* font-family: "Raleway",sans-serif; */
+}
+h1 {
+    font-size: 8vw;
+    color: #fff;
+		padding-left: 5%;
+
+}
+h3 {
+    margin-top: 75vh;
+		padding-left: 5%;
+    font-size: 5vw;
+    font-weight: 500;
+    color: #ccc;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+		align-content: center;
+    margin: 0;
+    overflow-x: hidden;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.backgroundThingy{
+	background-color: black;
+
+}
+
+
+.music-player {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    border-radius: 0 0 1vw 1vw;
+    background: transparent linear-gradient(to bottom,transparent 50%,black 90%) repeat scroll 0 0;
+    /* box-shadow: 1px 10px 20px 5px #222; */
+}
+.cover {
+    float: left;
+    width: 100%;
+    height: 66%;
+}
+
+
+.cover img {
+    display: block;
+    position: relative;
+    top: 8%;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+}
+.titre {
+    float: left;
+    width: 100%;
+}
+.lecteur {
+    width: 105%;
+    display: block;
+    height: auto;
+    position: relative;
+		right: 10%;
+    /* float: left; */
+}
+.mejs__button>button:focus {
+    outline: 0px dotted #999;
+}
+.mejs__container {
+    position: relative;
+    background-color: transparent;
+    min-width: auto !important;
+}
+.mejs__controls {
+    padding: 0 10%;
+    background: transparent !important;
+    display: block;
+    position: relative;
+}
+.mejs__controls div {
+    display: block;
+    float: left;
+    position: relative;
+}
+
+
+
+
+.mejs__controls .mejs__playpause-button {
+    position: absolute !important;
+		float: right;
+    right: 0%;
+    top: 70vh;
+    width: 40px;
+}
+.mejs__controls .mejs__playpause-button button {
+    display: block;
+    width: 20vw;
+    height: 20vw;
+    padding: 0;
+    border: 0;
+    font-family: FontAwesome;
+    font-size: 15vw;
+    color: white;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+.mejs__controls .mejs__play button:before{
+    content:"\f04b";
+}
+.mejs__controls .mejs__pause button:before{
+    content:"\f04c";
+}
+/* .mejs__controls .mejs__volume-button button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+    font-family: FontAwesome;
+    font-size: 20px;
+    color: #5bbb95;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+} */
+/* .mejs__controls .mejs__mute button:before {
+    content: "\f028";
+}
+.mejs__controls .mejs__unmute button:before {
+    content: "\f026";
+} */
+.mejs__controls .mejs__time {
+    width: 120%;
+    margin-top: 7%;
+    margin-bottom: 3%;
+    color: #fff;
+    height: auto;
+    padding: 0;
+    overflow: visible;
+    min-width: 100%;
+}
+.mejs__controls .mejs__time span {
+    font-size: 5vw;
+}
+.mejs__controls span.mejs__duration {
+    float: right;
+    text-align: right;
+    color: #ccc;
+}
+.mejs__controls span.mejs__currenttime {
+    font-weight: 700;
+    float: right;
+}
+.mejs__controls .mejs__time-rail {
+    width: 120%;
+    margin: 0;
+}
+.mejs__controls .mejs__time-rail span {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.mejs__controls .mejs__time-rail .mejs__time-loaded {
+    background: rgba(255,255,255,0.2);
+}
+.mejs__controls .mejs__time-rail .mejs__time-float {
+    display: none;
+    top: -40px;
+    width: 40px;
+    height: 25px;
+    margin-left: 0px;
+    text-align: center;
+    font-size: 10px;
+    background: #fff;
+    border: 0;
+}
+.mejs__controls .mejs__time-rail .mejs__time-float-current {
+    display: block;
+    position: relative;
+    top: 0;
+    margin: 0;
+    line-height: 26px;
+    color: #100d28;
+}
+.mejs__controls .mejs__time-rail .mejs__time-float-corner {
+    top: auto;
+    bottom: -9px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-top: 6px solid #fff;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+.mejs__controls .mejs__time-rail .mejs__time-current {
+    background: #5BBB95 none repeat scroll 0 0;
+}
+.mejs__controls .mejs__time-handle {
+    display: none;
+}
+/* .mejs__controls .mejs__volume-button {
+    position: relative;
+    position: absolute !important;
+    top: 70px;
+    right: 25%;
+    width: 40px;
+    height: 40px;
+}
+.mejs__controls .mejs__horizontal-volume-slider {
+    display: block;
+    position: absolute !important;
+    position: relative;
+    top: 70px;
+    right: 10%;
+    width: 60px;
+    height: 4px;
+    margin-top: 18px;
+    border-radius: 50px;
+    line-height: 11px;
+}
+.mejs__controls .mejs__horizontal-volume-slider .mejs__horizontal-volume-total,
+.mejs__controls .mejs__horizontal-volume-slider .mejs__horizontal-volume-current {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+}
+.mejs__controls .mejs__horizontal-volume-slider .mejs__horizontal-volume-current {
+    background: #fff;
+} */
+  </style>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelement-and-player.min.js"></script>
+
+  <script>
+
+
+	function openModal() {
+	  document.getElementById("myModal").style.display = "block";
+	}
+
+	function closeModal() {
+	  document.getElementById("myModal").style.display = "none";
+	}
+
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("demo");
+	  var captionText = document.getElementById("caption");
+	  if (n > slides.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";
+	  dots[slideIndex-1].className += " active";
+	  captionText.innerHTML = dots[slideIndex-1].alt;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	var moreLyrics = document.getElementById("moreLyrics");
+	var moreChron = document.getElementById("moreChron");
+	var morePReel = document.getElementById("morePReel");
+	var moreFront = document.getElementById("moreFront");
+	var moreBack = document.getElementById("moreBack");
+
+	var myBackBtn = document.getElementById("myBackBtn");
+	var myFrontBtn = document.getElementById("myFrontBtn");
+	var myLyricBtn = document.getElementById("myLyricBtn");
+	var myPReelBtn = document.getElementById("myPReelBtn");
+	const el = document.getElementById('myNavBtns');
+
+
+	var scale;
+
+
+
+
+function frontTime(){
+
+
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+
+
+
+	if(moreFront.style.display==="inline"){
+		// moreFront.style.display = "none";
+	}else{
+		myFrontBtn.focus();
+		myLyricBtn.blur();
+		myBackBtn.blur();
+		myPReelBtn.blur();
+		moreFront.style.display = "inline";
+		moreLyrics.style.display = "none";
+		moreBack.style.display = "none";
+		morePReel.style.display = "none";
+	}
+
+
+
+
+}
+
+function backTime(){
+
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+
+
+
+
+
+	if(moreBack.style.display==="inline"){
+		// moreFront.style.display = "none";
+	}else{
+		myBackBtn.focus();
+		myFrontBtn.blur();
+		myLyricBtn.blur();
+		myPReelBtn.blur();
+		moreBack.style.display = "inline";
+		moreLyrics.style.display = "none";
+		moreFront.style.display = "none";
+		morePReel.style.display = "none";
+	}
+
+}
+
+
+function lyricTime(){
+
+	document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+
+
+
+	if(moreLyrics.style.display==="inline"){
+		// moreFront.style.display = "none";
+	}else{
+		myLyricBtn.focus();
+		myFrontBtn.blur();
+		myBackBtn.blur();
+		myPReelBtn.blur();
+		moreLyrics.style.display = "inline";
+		moreFront.style.display = "none";
+		moreBack.style.display = "none";
+		morePReel.style.display = "none";
+	}
+
+
+}
+
+function pReelTime(){
+
+
+	document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+
+
+	if(morePReel.style.display==="inline"){
+		// moreFront.style.display = "none";
+	}else{
+		myPReelBtn.focus();
+		myFrontBtn.blur();
+		myBackBtn.blur();
+		myLyricBtn.blur();
+		morePReel.style.display = "inline";
+		moreLyrics.style.display = "none";
+		moreBack.style.display = "none";
+		moreFront.style.display = "none";
+	}
+
+
+}
+
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos || window.pageYOffset<20) {
+    document.getElementById("myNavBtns").style.top = "0";
+  } else {
+    document.getElementById("myNavBtns").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
+let touchstartX = 0;
+let touchstartY = 0;
+let touchendX = 0;
+let touchendY = 0;
+
+const gestureZone = document.getElementById('gestureZone');
+let zoom = (( window.outerWidth - 10 ) / window.innerWidth) * 100;
+
+gestureZone.addEventListener('touchstart', function(event) {
+		touchstartX = event.touches[0].clientX;
+		touchstartY = event.touches[0].clientY;
+		console.log(zoom);
+
+	// if(document.body.scrollTop == 0 || document.documentElement.scrollTop == 0){
+	// 	scale = 1;
+	// }
+
+}, false);
+
+gestureZone.addEventListener('touchend', function(event) {
+		touchendX = event.changedTouches[0].clientX;
+		touchendY = event.changedTouches[0].clientY;
+		if(Math.abs(touchendY-touchstartY)<Math.abs(touchendX-touchstartX) && zoom>95 && zoom<101 && Math.abs(touchendX-touchstartX)>(screen.width*.2)){
+		event.preventDefault();
+		// document.body.style.overflowY = "hidden";
+		// handleGesture();
+	}
+	if(Math.abs(touchendY-touchstartY)>Math.abs(touchendX-touchstartX) && zoom>95 && zoom<101){
+	// touchZoom();
+}
+}, false);
+
+gestureZone.addEventListener('touchmove', function(event) {
+		touchendX = event.changedTouches[0].clientX;
+		touchendY = event.changedTouches[0].clientY;
+		if(Math.abs(touchendY-touchstartY)>Math.abs(touchendX-touchstartX) && zoom>95 && zoom<101){
+		// touchZoom();
+	}
+}, false);
+
+
+
+function touchZoom(){
+	if (touchendY <= (touchstartY)) {
+			// console.log((touchendY+20)-(touchstartY));
+
+			scale -= Math.abs(touchendY-touchstartY)*.00625;
+
+
+			// Restrict scale
+			scale = Math.min(Math.max(.00, scale), 1.01);
+
+			// Apply scale transform
+			el.style.transform = `scale(${scale})`;
+	}
+
+	if (touchendY >= (touchstartY)) {
+			console.log('Swiped down');
+			// Zoom out
+			scale += Math.abs(touchendY-touchstartY)*.00625;
+			// Restrict scale
+			scale = Math.min(Math.max(.00, scale), 1.01);
+
+			// Apply scale transform
+			el.style.transform = `scale(${scale})`;
+
+	}
+
+}
+
+
+
+
+function handleGesture(event) {
+	let swipeLeft;
+	// console.log(screen.width-touchstartX);
+	// console.log(touchendX);
+		if (touchendX <= touchstartX && (screen.width-touchstartX)<100) {
+			swipeLeft = true;
+		}else if (touchendX >= touchstartX && touchstartX<100){
+			swipeLeft = false;
+		}
+				if(swipeLeft==true){
+
+				if(moreFront.style.display==="inline"){
+					backTime();
+				}
+				else if(moreLyrics.style.display==="inline" && 	document.body.scrollTop == 0){
+
+					pReelTime();
+				}
+				else if(moreLyrics.style.display==="inline" && 	document.documentElement.scrollTop == 0){
+					pReelTime();
+				}
+				else if(moreBack.style.display==="inline"){
+					lyricTime();
+				}
+			}else{
+
+				 if(moreLyrics.style.display==="inline" && 	document.body.scrollTop == 0){
+					backTime();
+				}
+				else if(moreLyrics.style.display==="inline" && document.documentElement.scrollTop == 0){
+					backTime();
+				}
+				else if(moreBack.style.display==="inline"){
+					frontTime();
+				}
+				else if(morePReel.style.display==="inline"){
+					lyricTime();
+		}
+	}
+
+	document.body.style.overflowY = "scroll";
+
+
+
+}
+
+
+
+
+
+// function chronTime(){
+//
+// 	if(moreChron.style.display=="inline"){
+// 	moreChron.style.display = "none";
+// }else{
+// 	moreChron.style.display = "inline";
+// }
+//
+// 	morePReel.style.display = "none";
+//
+// }
+//
+//
+// function viewChron() {
+//
+//   var btnText = document.getElementById("myChronBtn");
+//
+// 	btnText.addEventListener("onclick",chronTime());
+//
+// }
+
+//
+// // LYRICS SECTION
+//
+//
+//
+// var lyrics1 = document.getElementById("lyrics1");
+// var lyrics2 = document.getElementById("lyrics2");
+// var lyrics3 = document.getElementById("lyrics3");
+// var lyrics4 = document.getElementById("lyrics4");
+// var lyrics5 = document.getElementById("lyrics5");
+// var lyrics6 = document.getElementById("lyrics6");
+// var lyrics7 = document.getElementById("lyrics7");
+// var lyrics8 = document.getElementById("lyrics8");
+// var lyrics9 = document.getElementById("lyrics9");
+// var lyrics10 = document.getElementById("lyrics10");
+// var lyrics11 = document.getElementById("lyrics11");
+// var lyrics12 = document.getElementById("lyrics12");
+// var lyrics13 = document.getElementById("lyrics13");
+//
+//
+// var lyricImage = document.getElementById("lyricImage")
+//
+// // buttonListenerFunctions
+//
+// function viewLyrics1() {
+//
+//   var btnText = document.getElementById("lyricBtn1");
+//
+// 	btnText.addEventListener("onclick", lyricsTime1());
+//
+// }
+//
+// function viewLyrics2() {
+//
+//   var btnText = document.getElementById("lyricBtn2");
+// 	btnText.addEventListener("onclick", lyricsTime2());
+//
+// }
+//
+// function viewLyrics3() {
+//
+//   var btnText = document.getElementById("lyricBtn3");
+// 	btnText.addEventListener("onclick", lyricsTime3());
+//
+// }
+//
+// function viewLyrics4() {
+//
+//   var btnText = document.getElementById("lyricBtn4");
+// 	btnText.addEventListener("onclick", lyricsTime4());
+//
+// }
+//
+// function viewLyrics5() {
+//
+//   var btnText = document.getElementById("lyricBtn5");
+// 	btnText.addEventListener("onclick", lyricsTime5());
+//
+// }
+//
+// function viewLyrics6() {
+//
+//   var btnText = document.getElementById("lyricBtn6");
+// 	btnText.addEventListener("onclick", lyricsTime6());
+//
+// }
+//
+// function viewLyrics7() {
+//
+//   var btnText = document.getElementById("lyricBtn7");
+// 	btnText.addEventListener("onclick", lyricsTime7());
+//
+// }
+//
+// function viewLyrics8() {
+//
+//   var btnText = document.getElementById("lyricBtn8");
+// 	btnText.addEventListener("onclick", lyricsTime8());
+//
+// }
+//
+// function viewLyrics9() {
+//
+//   var btnText = document.getElementById("lyricBtn9");
+// 	btnText.addEventListener("onclick", lyricsTime9());
+//
+// }
+//
+// function viewLyrics10() {
+//
+//   var btnText = document.getElementById("lyricBtn10");
+// 	btnText.addEventListener("onclick", lyricsTime10());
+//
+// }
+//
+// function viewLyrics11() {
+//
+//   var btnText = document.getElementById("lyricBtn11");
+// 	btnText.addEventListener("onclick", lyricsTime11());
+//
+// }
+//
+// function viewLyrics12() {
+//
+//   var btnText = document.getElementById("lyricBtn12");
+// 	btnText.addEventListener("onclick", lyricsTime12());
+//
+// }
+//
+// function viewLyrics13() {
+//
+//   var btnText = document.getElementById("lyricBtn13");
+// 	btnText.addEventListener("onclick", lyricsTime13());
+//
+// }
+//
+//
+// // deactivate/toggleFUNCTIONS
+//
+//
+// function lyricsTime1(){
+//
+// 	if(lyrics1.style.display=="inline"){
+// 	lyrics1.style.display = "none";
+// 	}else{
+// 	lyrics1.style.display = "inline";
+// }
+//
+// 	lyrics2.style.display= "none";
+// 	lyrics3.style.display = "none";
+// 	lyrics4.style.display = "none";
+// 	lyrics5.style.display = "none";
+// 	lyrics6.style.display = "none";
+// 	lyrics7.style.display = "none";
+// 	lyrics8.style.display = "none";
+// 	lyrics9.style.display = "none";
+// 	lyrics10.style.display = "none";
+// 	lyrics11.style.display = "none";
+// 	lyrics12.style.display = "none";
+// 	lyrics13.style.display = "none";
+//
+// }
+//
+// function lyricsTime2(){
+//
+//
+// 	if(lyrics2.style.display=="inline"){
+// 	lyrics2.style.display = "none";
+// }else{
+// 	lyrics2.style.display = "inline";
+// }
+//
+// 	lyrics1.style.display = "none";
+// 	lyrics3.style.display = "none";
+// 	lyrics4.style.display = "none";
+// 	lyrics5.style.display = "none";
+// 	lyrics6.style.display = "none";
+// 	lyrics7.style.display = "none";
+// 	lyrics8.style.display = "none";
+// 	lyrics9.style.display = "none";
+// 	lyrics10.style.display = "none";
+// 	lyrics11.style.display = "none";
+// 	lyrics12.style.display = "none";
+// 	lyrics13.style.display = "none";
+//
+// }
+//
+// function lyricsTime3(){
+//
+// 	if(lyrics3.style.display=="inline"){
+// 	lyrics3.style.display = "none";
+// }else{
+// 	lyrics3.style.display = "inline";
+// }
+// 	lyrics1.style.display = "none";
+// 	lyrics2.style.display= "none";
+// 	lyrics4.style.display = "none";
+// 	lyrics5.style.display = "none";
+// 	lyrics6.style.display = "none";
+// 	lyrics7.style.display = "none";
+// 	lyrics8.style.display = "none";
+// 	lyrics9.style.display = "none";
+// 	lyrics10.style.display = "none";
+// 	lyrics11.style.display = "none";
+// 	lyrics12.style.display = "none";
+// 	lyrics13.style.display = "none";
+//
+// }
+//
+// function lyricsTime4(){
+//
+// 	if(lyrics4.style.display=="inline"){
+// 	lyrics4.style.display = "none";
+// }else{
+// 	lyrics4.style.display = "inline";
+// }
+// 	lyrics1.style.display = "none";
+// 	lyrics2.style.display = "none";
+// 	lyrics3.style.display = "none";
+// 	lyrics5.style.display = "none";
+// 	lyrics6.style.display = "none";
+// 	lyrics7.style.display = "none";
+// 	lyrics8.style.display = "none";
+// 	lyrics9.style.display = "none";
+// 	lyrics10.style.display = "none";
+// 	lyrics11.style.display = "none";
+// 	lyrics12.style.display = "none";
+// 	lyrics13.style.display = "none";
+//
+// }
+//
+// function lyricsTime5(){
+//
+// 	if(lyrics5.style.display=="inline"){
+// 	lyrics5.style.display = "none";
+// }else{
+// 	lyrics5.style.display = "inline";
+// }
+// 	lyrics1.style.display = "none";
+// 	lyrics2.style.display= "none";
+// 	lyrics3.style.display = "none";
+// 	lyrics4.style.display = "none";
+// 	lyrics6.style.display = "none";
+// 	lyrics7.style.display = "none";
+// 	lyrics8.style.display = "none";
+// 	lyrics9.style.display = "none";
+// 	lyrics10.style.display = "none";
+// 	lyrics11.style.display = "none";
+// 	lyrics12.style.display = "none";
+// 	lyrics13.style.display = "none";
+//
+// }
+//
+// function lyricsTime6(){
+//
+// 	if(lyrics6.style.display=="inline"){
+// 	lyrics6.style.display = "none";
+// }else{
+// 	lyrics6.style.display = "inline";
+// }
+// 	lyrics1.style.display = "none";
+// 	lyrics2.style.display = "none";
+// 	lyrics3.style.display = "none";
+// 	lyrics4.style.display = "none";
+// 	lyrics5.style.display = "none";
+// 	lyrics7.style.display = "none";
+// 	lyrics8.style.display = "none";
+// 	lyrics9.style.display = "none";
+// 	lyrics10.style.display = "none";
+// 	lyrics11.style.display = "none";
+// 	lyrics12.style.display = "none";
+// 	lyrics13.style.display = "none";
+//
+// }
+//
+// function lyricsTime7(){
+//
+// 	if(lyrics7.style.display=="inline"){
+// 	lyrics7.style.display = "none";
+// }else{
+// 	lyrics7.style.display = "inline";
+// }
+// 	lyrics1.style.display = "none";
+// 	lyrics2.style.display= "none";
+// 	lyrics3.style.display = "none";
+// 	lyrics4.style.display = "none";
+// 	lyrics5.style.display = "none";
+// 	lyrics6.style.display = "none";
+// 	lyrics8.style.display = "none";
+// 	lyrics9.style.display = "none";
+// 	lyrics10.style.display = "none";
+// 	lyrics11.style.display = "none";
+// 	lyrics12.style.display = "none";
+// 	lyrics13.style.display = "none";
+//
+// }
+//
+// function lyricsTime8(){
+//
+// 	if(lyrics8.style.display=="inline"){
+// 	lyrics8.style.display = "none";
+// }else{
+// 	lyrics8.style.display = "inline";
+// }
+// 	lyrics1.style.display = "none";
+// 	lyrics2.style.display = "none";
+// 	lyrics3.style.display = "none";
+// 	lyrics4.style.display = "none";
+// 	lyrics5.style.display = "none";
+// 	lyrics6.style.display = "none";
+// 	lyrics7.style.display = "none";
+// 	lyrics9.style.display = "none";
+// 	lyrics10.style.display = "none";
+// 	lyrics11.style.display = "none";
+// 	lyrics12.style.display = "none";
+// 	lyrics13.style.display = "none";
+//
+// }
+//
+// function lyricsTime9(){
+//
+// 	if(lyrics9.style.display=="inline"){
+// 	lyrics9.style.display = "none";
+// }else{
+// 	lyrics9.style.display = "inline";
+// }
+// 	lyrics1.style.display = "none";
+// 	lyrics2.style.display= "none";
+// 	lyrics3.style.display = "none";
+// 	lyrics4.style.display = "none";
+// 	lyrics5.style.display = "none";
+// 	lyrics6.style.display = "none";
+// 	lyrics7.style.display = "none";
+// 	lyrics8.style.display = "none";
+// 	lyrics10.style.display = "none";
+// 	lyrics11.style.display = "none";
+// 	lyrics12.style.display = "none";
+// 	lyrics13.style.display = "none";
+//
+// }
+//
+// function lyricsTime10(){
+//
+// 	if(lyrics10.style.display=="inline"){
+// 	lyrics10.style.display = "none";
+// }else{
+// 	lyrics10.style.display = "inline";
+// }
+// 	lyrics1.style.display = "none";
+// 	lyrics2.style.display = "none";
+// 	lyrics3.style.display = "none";
+// 	lyrics4.style.display = "none";
+// 	lyrics5.style.display = "none";
+// 	lyrics6.style.display = "none";
+// 	lyrics7.style.display = "none";
+// 	lyrics8.style.display = "none";
+// 	lyrics9.style.display = "none";
+// 	lyrics11.style.display = "none";
+// 	lyrics12.style.display = "none";
+// 	lyrics13.style.display = "none";
+//
+// }
+//
+// function lyricsTime11(){
+//
+// 	if(lyrics11.style.display=="inline"){
+// 	lyrics11.style.display = "none";
+// }else{
+// 	lyrics11.style.display = "inline";
+// }
+// 	lyrics1.style.display = "none";
+// 	lyrics2.style.display= "none";
+// 	lyrics3.style.display = "none";
+// 	lyrics4.style.display = "none";
+// 	lyrics5.style.display = "none";
+// 	lyrics6.style.display = "none";
+// 	lyrics7.style.display = "none";
+// 	lyrics8.style.display = "none";
+// 	lyrics9.style.display = "none";
+// 	lyrics10.style.display = "none";
+// 	lyrics12.style.display = "none";
+// 	lyrics13.style.display = "none";
+//
+// }
+//
+// function lyricsTime12(){
+//
+// 	if(lyrics12.style.display=="inline"){
+// 	lyrics12.style.display = "none";
+// }else{
+// 	lyrics12.style.display = "inline";
+// }
+//
+// 	lyrics1.style.display = "none";
+// 	lyrics2.style.display = "none";
+// 	lyrics3.style.display = "none";
+// 	lyrics4.style.display = "none";
+// 	lyrics5.style.display = "none";
+// 	lyrics6.style.display = "none";
+// 	lyrics7.style.display = "none";
+// 	lyrics8.style.display = "none";
+// 	lyrics9.style.display = "none";
+// 	lyrics10.style.display = "none";
+// 	lyrics11.style.display = "none";
+// 	lyrics13.style.display = "none";
+//
+// }
+//
+// function lyricsTime13(){
+//
+// 	if(lyrics13.style.display=="inline"){
+// 	lyrics13.style.display = "none";
+// }else{
+// 	lyrics13.style.display = "inline";
+// }
+// 	lyrics1.style.display = "none";
+// 	lyrics2.style.display= "none";
+// 	lyrics3.style.display = "none";
+// 	lyrics4.style.display = "none";
+// 	lyrics5.style.display = "none";
+// 	lyrics6.style.display = "none";
+// 	lyrics7.style.display = "none";
+// 	lyrics8.style.display = "none";
+// 	lyrics9.style.display = "none";
+// 	lyrics10.style.display = "none";
+// 	lyrics11.style.display = "none";
+// 	lyrics12.style.display = "none";
+//
+// }
+//
+
+
+
+  </script>
+
+
+
+
+	</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<!-- <br>
+				<button onclick="viewLyrics1()" class="glow-on-hoverSUB" id="lyricBtn1">Dreams</button><br>
+
+
+				<span id="lyrics1">
+
+
+					here's where the dreams lyrics go
+
+				</span>
+
+				<br>
+				<button onclick="viewLyrics2()" class="glow-on-hoverSUB" id="lyricBtn2">No Wolves, Just Sheep Grazing...</button><br>
+
+				<span id="lyrics2">
+
+					here's where the no wolves lyrics go
+
+				</span>
+
+				<br>
+				<button onclick="viewLyrics3()" class="glow-on-hoverSUB" id="lyricBtn3">Theatre of Animals</button><br>
+
+
+				<span id="lyrics3">
+
+
+					here's where the THEATRE of ANIMALS lyrics go
+
+				</span>
+
+				<br>
+				<button onclick="viewLyrics4()" class="glow-on-hoverSUB" id="lyricBtn4">The Sleep Factory</button><br>
+
+				<span id="lyrics4">
+
+					here's where the The Sleep Factory lyrics go
+
+				</span>
+
+				<br>
+				<button onclick="viewLyrics5()" class="glow-on-hoverSUB" id="lyricBtn5">Funeral</button><br>
+
+
+				<span id="lyrics5">
+
+
+					here's where the Funeral lyrics go
+
+				</span>
+
+				<br>
+				<button onclick="viewLyrics6()" class="glow-on-hoverSUB" id="lyricBtn6">"Be Operation (That Is...</button><br>
+
+				<span id="lyrics6">
+
+					here's where the BEOP lyrics go
+
+				</span>
+
+				<br>
+				<button onclick="viewLyrics7()" class="glow-on-hoverSUB" id="lyricBtn7">Just Be Normal, Do Your Part</button><br>
+
+
+				<span id="lyrics7">
+
+
+					here's where the JBNDYP lyrics go
+
+				</span>
+
+				<br>
+				<button onclick="viewLyrics8()" class="glow-on-hoverSUB" id="lyricBtn8">The Construction of...</button><br>
+
+				<span id="lyrics8">
+
+					here's where the TCOU lyrics go
+
+				</span>
+
+
+				<br>
+				<button onclick="viewLyrics9()" class="glow-on-hoverSUB" id="lyricBtn9">Eventually the Train Will Come</button><br>
+
+
+				<span id="lyrics9">
+
+
+					here's where the ETTWC lyrics go
+
+				</span>
+
+				<br>
+				<button onclick="viewLyrics10()" class="glow-on-hoverSUB" id="lyricBtn10">The Immanence of Sleep in...</button><br>
+
+				<span id="lyrics10">
+
+					here's where immanence lyrics go
+
+				</span>
+
+
+				<br>
+				<button onclick="viewLyrics11()" class="glow-on-hoverSUB" id="lyricBtn11">Controlled Paralysis</button><br>
+
+
+				<span id="lyrics11">
+
+
+					here's where the CP lyrics go
+
+				</span>
+
+				<br>
+				<button onclick="viewLyrics12()" class="glow-on-hoverSUB" id="lyricBtn12">The Sweet Smell of Excess...</button><br>
+
+				<span id="lyrics12">
+
+					here's where the TSSOEAW lyrics go
+
+				</span>
+
+				<br>
+				<button onclick="viewLyrics13()" class="glow-on-hoverSUB" id="lyricBtn13">Empire of Desire</button><br>
+
+
+				<span id="lyrics13">
+
+
+					here's where the EOD lyrics go
+
+				</span> -->
+
+
+
+
+
+
+
+
+<!--
+
+				#lyrics1 {display: none;}
+				#lyrics2 {display: none;}
+				#lyrics3 {display: none;}
+				#lyrics4 {display: none;}
+				#lyrics5 {display: none;}
+				#lyrics6 {display: none;}
+				#lyrics7 {display: none;}
+				#lyrics8 {display: none;}
+				#lyrics9 {display: none;}
+				#lyrics10 {display: none;}
+				#lyrics11 {display: none;}
+				#lyrics12 {display: none;}
+				#lyrics13 {display: none;} -->
