@@ -11,9 +11,6 @@ var moreTrackListing = document.getElementById("moreTrackListing");
 var lessTrackListing = document.getElementById("lessTrackListing");
 var less1TrackListing = document.getElementById("less1TrackListing");
 var myTrackListBtn = document.getElementById("myTrackListBtn");
-var myFrontBtn = document.getElementById("myFrontBtn");
-var myLyricBtn = document.getElementById("myLyricBtn");
-var myPReelBtn = document.getElementById("myPReelBtn");
 const el = document.getElementById('myNavBtns');
 var myNavBtns = document.getElementById("myNavBtns");
 var myNav1Btns = document.getElementById("myNav1Btns");
@@ -38,7 +35,7 @@ var audio = {
 		music1.style.top = "100vh";
 
 		currentTime = 0;
-		myFrontBtn.focus();
+		// myFrontBtn.focus();
 		scale = 1;
 		var $that = this;
 		$(function() {
@@ -170,11 +167,7 @@ function frontTime() {
 	moreBack.style.display = "none";
 	moreIG.style.display = "flex";
 	if (moreFront.style.display === "inline") {
-		// moreFront.style.display = "none";
 	} else {
-		myFrontBtn.focus();
-		myLyricBtn.blur();
-		myPReelBtn.blur();
 		moreIG.style.display = "flex";
 		moreFront.style.display = "inline";
 		moreLyrics.style.display = "none";
@@ -190,11 +183,7 @@ function frontTime() {
 function backTime() {
 	scrollFront = window.pageYOffset;
 	if (moreBack.style.display === "inline") {
-		// moreFront.style.display = "none";
 	} else {
-		myFrontBtn.blur();
-		myLyricBtn.blur();
-		myPReelBtn.blur();
 		moreBack.style.display = "inline";
 		moreFront.style.display = "none";
 		moreLyrics.style.display = "none";
@@ -214,9 +203,9 @@ function lyricTime() {
 	if (moreLyrics.style.display === "inline") {
 		// moreFront.style.display = "none";
 	} else {
-		myLyricBtn.blur();
-		myFrontBtn.blur();
-		myPReelBtn.blur();
+		// myLyricBtn.blur();
+		// myFrontBtn.blur();
+		// myPReelBtn.blur();
 		moreLyrics.style.display = "inline";
 		music1.style.top = "100vh";
 		myNav2Btns.style.right = "-500px";
@@ -235,9 +224,9 @@ function pReelTime() {
 	if (morePReel.style.display === "inline") {
 		// moreFront.style.display = "none";
 	} else {
-		myPReelBtn.focus();
-		myFrontBtn.blur();
-		myLyricBtn.blur();
+		// myPReelBtn.focus();
+		// myFrontBtn.blur();
+		// myLyricBtn.blur();
 		morePReel.style.display = "inline";
 		moreIG.style.display = "none";
 		moreLyrics.style.display = "none";
