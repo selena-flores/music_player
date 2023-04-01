@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
-<link rel="icon" href="images/city/6.jpeg">
-<link rel="apple-touch-icon" href="images/city/6.jpeg">
-<link rel="apple-touch-startup-image" href="images/ll.gif">
-<title>BECOMING CYBORG EP</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,
+		minimum-scale=1, user-scalable=yes">
+	<link rel="icon" href="images/6.jpeg">
+	<link rel="apple-touch-icon" href="images/6.jpeg">
+	<link rel="apple-touch-startup-image" href="images/ll.gif">
+	<title>BECOMING CYBORG EP</title>
 
-<body>
-	<div id="gestureZone">
-
-		<!-- SIDE A // SIDE B NAVIGATION -->
-		<div id="myNavBtns">
-			<button onclick="frontTime()" id="myFrontBtn" style="display: none">SIDE A</button>
-			<button onclick="backTime()" id="myBackBtn" style="display: none">SIDE B</button>
-			<button onclick="pReelTime()" id="myPReelBtn" style="display: none">Gallery</button>
-		</div>
+	<body>
 
 		<!-- 9:16 Music Player -->
-		<span id="dots"></span>
 		<span id="myMusic1" style="position:fixed;transition: top .3s">
 			<div id="myNav2Btns">
 				<button onclick="lyricTime()" id="myLyricBtn">▲Lyrics</button>
@@ -28,7 +20,8 @@
 					<img width="40px" style="padding: 8px;" src="images/back.png">
 				</button>
 				<div class="bg1">
-					<div class="titre" style="position: absolute; top: 0vh; text-align: center;">
+					<div class="titre" style="position: absolute; top: 0vh; text-align:
+						center;">
 						<h3 id="songTitle" style="text-align: center; margin-top: 8px;"></h3>
 					</div>
 				</div>
@@ -37,22 +30,20 @@
 
 		<!-- music player -->
 		<div class="container">
-			<span id="stuff">
-				<center>
-					<div class="lecteur" id="wow">
-						<audio controls id='myAudio' style="display: none;">
-							<source src="" type="audio/mp3" />
-						</audio>
-					</div>
-				</center>
+			<span id="lecteur">
+				<div class="lecteur" id="lecteur">
+					<audio controls id='myAudio' style="display: none;">
+						<source src="" type="audio/mp3" />
+					</audio>
+				</div>
 			</span>
 		</div>
 
 		<!-- SIDE A // front page -->
-		<span id="dots"></span>
 		<span id="moreFront">
 			<div class="music-player" id='oop'>
-				<div id='tap' style="position: absolute; top: 70vh; color: white; font-size: 10vw; text-shadow: grey 0 0 5vw;">BECOMING CYBORG</div>
+				<div id='tap' style="position: absolute; top: 70vh; color: white;
+					font-size: 10vw; text-shadow: grey 0 0 5vw;">BECOMING CYBORG</div>
 				<div class="bg">
 				</div>
 
@@ -65,20 +56,19 @@
 			<br>
 			<br>
 			<div class="titre">
-				<h3 style="padding-left: 1vw;margin-top: -0vh;text-align: left; text-shadow: 0vw 0vw .5vw #080808	; line-height: 10vw; font-size: 5vw; background: #080808	;">
+				<h3 style="padding-left: 1vw;margin-top: -0vh;text-align: left;
+					text-shadow: 0vw 0vw .5vw #080808 ; line-height: 10vw; font-size: 5vw;
+					background: #080808 ;">
 					<div class="arrow" onclick="trackListTime()" id="myTrackListBtn">
-						<span id="dots"></span>
 						<span id="moreTrackListing">
 							view tracks ▲
 						</span>
-						<span id="dots"></span>
 						<span id="lessTrackListing">
 							view tracks ▼ <br>
 						</span>
 					</div>
 
 					<!-- list of songs -->
-					<span id="dots"></span>
 					<span id="less1TrackListing">
 						<div id="imageGallery">
 							<figure>
@@ -103,7 +93,7 @@
 								</figcaption>
 							</figure>
 							<figure>
-								<img loading=lazy src="images/city/6.gif" onclick="itimeStamp3()">
+								<img loading=lazy src="images/6.gif" onclick="itimeStamp3()">
 								<figcaption>
 									TRAP CONTROL
 								</figcaption>
@@ -112,7 +102,7 @@
 						<br>
 						<div id="imageGallery">
 							<figure>
-								<img loading=lazy src="images/city/12.gif" onclick="itimeStamp4()">
+								<img loading=lazy src="images/12.gif" onclick="itimeStamp4()">
 								<figcaption>
 									BECOMING CYBORG
 								</figcaption>
@@ -128,13 +118,7 @@
 			</div>
 		</span>
 
-		<!-- optional photo gallery -->
-		<span id="dots"></span>
-		<span id="morePReel">
-		</span>
-
 		<!-- SIDE B // back page-->
-		<span id="dots"></span>
 		<span id="moreBack">
 			<div class="titre">
 				<div id="myNav1Btns" style="color: white;">
@@ -144,7 +128,7 @@
 		</span>
 
 		<!-- lyric panel -->
-		<div class="bodyBoi2">
+		<div class="lyric_panel">
 			<span id="lyricsDots"></span>
 			<span id="moreLyrics">
 				<span id="lyricImage">
@@ -153,16 +137,19 @@
 					</div>
 					<br>
 					<br>
-					<img id="lyricPANEL" loading=lazy style="padding-top: -10vh; padding-bottom: -10vh;" src="" width="100%">
+					<img id="lyricPANEL" loading=lazy style="padding-top: -10vh;
+						padding-bottom: -10vh;" src="" width="100%">
 					<br>
 				</span>
 			</span>
 		</div>
+	</body>
 
-	</div>
-</body>
-<link rel="stylesheet" href="becoming_cyborg.css">
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="becoming_cyborg.js"> </script>
+	<link rel="stylesheet" href="becoming_cyborg.css">
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="track_setter.js"> </script>
+	<script type="text/javascript" src="state_getter.js"> </script>
+	<script type="text/javascript" src="state_setter.js"> </script>
 
 </html>
