@@ -378,7 +378,7 @@ h3 {
 .music-player {
 	display: block;
 	position: relative;
-	background-image: url("images/final.gif");
+	background-image: url("../images/final.gif");
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
